@@ -20,6 +20,7 @@ const getCollection = collection => {
     },
     err => {
       console.log(err.message);
+      documents.value = null;
       err.value = 'could not fetch data';
     }
   );
